@@ -2,8 +2,9 @@ import axios from 'axios'
 
 // Update this to your server's IP when testing on a physical device
 // e.g., 'http://192.168.1.10:5000/api'
+// Replace 192.168.x.x with your machine's local IP (run: hostname -I)
 const BASE_URL = __DEV__
-  ? 'http://localhost:5000/api'
+  ? 'http://192.168.x.x:5000/api'
   : 'https://your-production-server.com/api'
 
 const api = axios.create({
